@@ -7,6 +7,7 @@ ENV HTTPS_PROXY ""
 
 COPY ./requirements.txt ./requirements.txt
 RUN apk add --no-cache ffmpeg libmagic libwebp tzdata \
+    && pip install --upgrade pip \
     && apk add --no-cache --virtual .build-deps git gcc \
     && pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave \
     && pip3 install -U git+https://github.com/milkice233/efb-qq-slave \
