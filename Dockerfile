@@ -5,7 +5,7 @@ ENV TZ 'Asia/Shanghai'
 ENV PROFILE default
 ENV HTTPS_PROXY ""
 
-RUN apk add --no-cache ffmpeg libmagic libwebp tzdata py3-pillow \
+RUN apk add --no-cache ffmpeg libmagic libwebp tzdata py3-pillow py3-pip \
     && apk add --no-cache --virtual .build-deps git gcc \
     && pip install --upgrade pip \
     && pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave \
