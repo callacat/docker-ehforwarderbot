@@ -5,8 +5,8 @@ ENV TZ 'Asia/Shanghai'
 ENV PROFILE default
 ENV HTTPS_PROXY ""
 
-RUN apk add --no-cache ffmpeg libmagic libwebp tzdata py3-pillow py3-cryptography py3-decorator \
-    && apk add --no-cache --virtual .build-deps git gcc \
+RUN apk add --no-cache ffmpeg libmagic libwebp tzdata py3-pillow py3-cryptography py3-decorator cairo py3-pip \
+    && apk add --no-cache --virtual .build-deps git gcc python3-dev  \
     && pip install --upgrade pip \
     && pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave \
     && pip3 install -U git+https://github.com/milkice233/efb-qq-slave \
