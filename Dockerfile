@@ -15,8 +15,8 @@ RUN apk add --no-cache ffmpeg libmagic libwebp tzdata tiff freetype lcms2 openjp
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && mkdir -p ~/.ehforwarderbot/profiles/default \
-    && rm -rf ~/.cache
-RUN apk del .build-deps
-RUN apk del build
+    && rm -rf ~/.cache \
+    && apk del .build-deps
+
 
 ENTRYPOINT ehforwarderbot
