@@ -19,4 +19,4 @@ RUN apk add --no-cache ffmpeg libmagic libwebp tzdata tiff freetype lcms2 openjp
     && apk del .build-deps
 
 
-ENTRYPOINT ehforwarderbot
+CMD ehforwarderbot
