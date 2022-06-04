@@ -11,7 +11,7 @@ RUN apk add --no-cache ffmpeg libmagic libwebp tzdata tiff freetype lcms2 \
     py3-decorator py3-olefile libffi-dev openssl-dev jpeg-dev libwebp-dev zlib-dev \
     python3-wheel webp libmagic-dev \
     && apk add --no-cache --virtual .build-deps git build-base gcc python3-dev \
-    # && pip3 install -r requirements.txt \
+    
     && pip3 install ehforwarderbot \
     && pip3 install efb-telegram-master \
     && pip3 install efb-wechat-slave \
