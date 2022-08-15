@@ -14,6 +14,7 @@ RUN apk add --no-cache ffmpeg libmagic libwebp tzdata tiff freetype \
     && pip3 install efb-telegram-master \
     && pip3 install efb-wechat-slave \
     && pip3 install -U git+https://github.com/milkice233/efb-qq-slave \
+    && pip3 install --upgrade efb-qq-slave \
     && pip3 install git+https://github.com/XYenon/efb-qq-plugin-go-cqhttp \
     && pip3 install -U git+https://github.com/tedrolin/python-wechatPc \
     && pip3 install -U git+https://github.com/tedrolin/efb-wechat-pc-slave \
