@@ -48,7 +48,7 @@ token: "123456789:ABCD_1-1A2BASDFA_ASFASDFASDFASDFASF"
 # on Telegram.
 admins:
 - 1234567
-
+ 
 ##################
 # Optional items #
 ##################
