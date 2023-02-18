@@ -43,8 +43,8 @@ jobs:
         platforms: linux/arm64,linux/amd64
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}/efb-qq
-          ${{ secrets.DOCKER_USERNAME }}/efb-qq:${{ steps.date.ouyputs.date }}
+          ${{ secrets.DOCKER_USERNAME }}/efbtoqq
+          ${{ secrets.DOCKER_USERNAME }}/efbtoqq:${{ steps.date.ouyputs.date }}
 
   del_runs:
     runs-on: ubuntu-latest
