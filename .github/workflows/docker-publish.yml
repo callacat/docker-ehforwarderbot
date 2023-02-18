@@ -34,14 +34,13 @@ jobs:
       run: |
         TZ=Asia/Shanghai
         echo "::set-output name=date::$(date +'%m-%d')"
-        ls
 
     - name: Build and push image
       uses: docker/build-push-action@v2
       with:
         context: .
         file: ./Dockerfile
-        platforms: linux/amd64
+        platforms: linux/arm64,linux/amd64
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/efb-qq
