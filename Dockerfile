@@ -4,7 +4,7 @@ ENV LANG C.UTF-8 \
     TZ 'Asia/Shanghai'
 
 RUN apk add --no-cache ffmpeg libmagic libwebp git \
-    && pip3 install --upgrade pip3
+    && pip3 install --upgrade pip3 \
     && pip3 install ehforwarderbot efb-telegram-master \
        -U git+https://github.com/milkice233/efb-qq-slave \
        git+https://github.com/XYenon/efb-qq-plugin-go-cqhttp \
