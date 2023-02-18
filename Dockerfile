@@ -1,9 +1,9 @@
-FROM python:3.10-alpine
+FROM python:3.9-alpine
 
 ENV LANG C.UTF-8 \
     TZ 'Asia/Shanghai'
 
-RUN apk add --no-cache ffmpeg libmagic libwebp \
+RUN apk add --no-cache ffmpeg libmagic libwebp git \
     && pip3 install ehforwarderbot \
        -U git+https://github.com/ehForwarderBot/efb-telegram-master \
        -U git+https://github.com/milkice233/efb-qq-slave \
