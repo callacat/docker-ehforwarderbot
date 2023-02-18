@@ -1,3 +1,0 @@
-ehforwarderbot
-efb-telegram-master
-efb-wechat-slave
