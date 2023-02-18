@@ -15,6 +15,7 @@ RUN apk add --no-cache ffmpeg libmagic libwebp tzdata tiff freetype \
     && pip3 install git+https://github.com/XYenon/efb-qq-plugin-go-cqhttp \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
-    && rm -rf ~/.cache /var/cache/apk/*
+    && rm -rf ~/.cache /var/cache/apk/* \
+    && apk del .build-deps
 
 CMD ehforwarderbot
