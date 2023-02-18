@@ -3,7 +3,7 @@ FROM python:3.10-alpine
 ENV LANG C.UTF-8 \
     TZ 'Asia/Shanghai'
 
-RUN apk add --no-cache ffmpeg libmagic libwebp git gcc jpeg-dev \
+RUN apk add --no-cache ffmpeg libmagic libwebp git gcc jpeg-dev build-essential \
     && pip install --upgrade pip \
     && pip3 install ehforwarderbot \
     && pip3 install efb-telegram-master \
