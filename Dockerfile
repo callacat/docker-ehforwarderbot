@@ -1,4 +1,4 @@
-FROM python:3.9-alpine
+FROM python:3.10-alpine
 
 ENV LANG C.UTF-8 \
     TZ 'Asia/Shanghai'
