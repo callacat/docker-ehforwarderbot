@@ -44,7 +44,7 @@ jobs:
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/efb-qq
-          ${{ secrets.DOCKERHUB_USERNAME }}/efb-qq:${{ steps.date.ouyputs.date }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/efb-qq:${{ steps.date.outputs.date }}
 
   del_runs:
     runs-on: ubuntu-latest
